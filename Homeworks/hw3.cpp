@@ -1,3 +1,7 @@
+/* tester.cpp
+   Fatih Yılmaz
+   This program includes car.h library and makes tests on car class. 
+*/
 #include <iostream>
 #include <string>
 #include "car.h" // added car class file

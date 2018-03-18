@@ -1,3 +1,7 @@
+/* car.h
+   Fatih Yılmaz
+   This file contains car class and can be used as library. 
+*/
 #include <iostream>
 #include <string>
 
@@ -62,10 +66,12 @@ Car::Car(string ownerName) : ownerName(ownerName) {
 	id = ++VIN;  // first increase VIN by one then assign it to created object's id
 }
 
+// Constructor with ownerName, year, speed and direction
 Car::Car(string ownerName, int year, int speed, int direction) : ownerName(ownerName), year(year), currentSpeed(speed), currentDirection(direction) {
 	id = ++VIN;  // first increase VIN by one then assign it to created object's id
 }
 
+// Change car speed to given parameter
 void Car::changeSpeed(int newSpeed) {
 	if(newSpeed<=0) {
 		currentSpeed = 0;
